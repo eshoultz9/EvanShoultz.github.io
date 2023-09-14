@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>My Website</title>
+                <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/MarioNSMBUDeluxe.png/220px-MarioNSMBUDeluxe.png">
         <style type="text/css">
             body {
              background: rgb(18, 0, 99);
              color: rgb(18, 0, 99);
              padding: 10px;
-             font-family: 'Times New Roman', Times, serif;
+             font-family: 'Arial', Times, serif;
          }
          header {
              font-size: 1.5em;
@@ -48,8 +49,16 @@
              
          }
          .nav-a:hover {
-             background: white;
-             text-emphasis-color: black;
+            display: flex;
+                align-items: center;
+                color: rgb(0, 100, 255);
+                flex: 1;
+                margin: 10px;
+                font-style: oblique;
+                font-size:25px;
+                padding: 1px; 
+
+              text-shadow: 2px 2px white;
          }
 
          /* main container area beneath menu */
@@ -81,7 +90,18 @@
          }
 
          #portfolio li:hover {
-             background: #D2292D;
+            background: white;
+                 justify-content: center;
+             box-shadow: 10px 8px white;
+           padding: 10px;
+             border-radius: 1px;
+             margin-bottom: 4px;
+             margin-left: 1px;
+             margin-right: 1px;
+             box-shadow: 20px 15px red;
+             margin-bottom: 15px;
+       border-color: red;
+            transform: rotate(-0.005turn);
          }
 
          #portfolio a {
@@ -107,14 +127,15 @@
                 <div class="content">
                     <h1>Portfolio</h1>
                     <ul id="portfolio">
-                        <li><a href="projects/platformer/">Platformer : A cannon - dodging collectible - grabbing adventure game for Halleb0t.</a></li>
-                        <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
-                        <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
-                        <li><a href="https://jsbin.com/foposokoki/edit?js,console">Text Adventrue 1 : An Awesome Journey</a></li>
+                        <li><a href="projects/platformer/">Platformer: A cannon - dodging collectible - grabbing adventure game for Halleb0t.</a></li>
+                        <li><a href="projects/bouncing-box/">Bouncing Box: A project that gives you a taste of game development on the web </a></li>
+                        <li><a href="projects/circularity/">Circularity: A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+                        <li><a href="https://jsbin.com/mutegom/1/edit?css,output">The Movie List: A list of peak movies</a></li>
+                        <li><a href="https://jsbin.com/foposokoki/edit?js,console">Text Adventrue 1: An Awesome Journey</a></li>
                         <li><a href="https://jsbin.com/bateqafubu/edit?js,console">Text Adventure 2: An Even Awesomer Journey</a></li>
                     </ul>
               
-                    <h2>Advanced Projects</h2>
+                    <h1>Advanced Projects</h1>
                     <ul id ="portfolio">
                         <li><a href="asd-projects/data-shapes"> Data Shapes: Iteration practice with patterns</a></li>
                         <li><a href="asd-projects/debugging-exercise"> Debugging Exercise: A debugging exercise</a></li>
@@ -122,6 +143,12 @@
                         <li><a href="asd-projects/walker">Walker: Practice user input by animating walking boxes</a></li>
                         <li><a href="asd-projects/image-filtering">Image Filtering: Filter images using loops</a></li>
                         <li><a href="asd-projects/sorting-exercise">Sorting Exercise: An exercise on sorting algorithms</a></li>
+                    </ul>
+
+                    <h1>Other Things</h1>
+                    <ul id ="portfolio">
+                        <li><a href="https://epicmanofcosmicproportions.github.io/TheMario64Website.github.io/"> Mario 64: A super epic game</a></li>
+                        <li><a href="https://epicmanofcosmicproportions.github.io/superepicwebsite/Epic%20Games/projects/GBA/launcher.html#dm"> Doom: A super epic game</a></li>
                     </ul>
             </main>
         </div>
