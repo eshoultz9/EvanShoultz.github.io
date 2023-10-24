@@ -1,16 +1,16 @@
 #board {
-    background: black;
-    width: 300px;
-    height: 300px;
+    background: rgb(255, 0, 200);
+    width: screen;
+    height: 900px;
     left: 0px;
     top: 0px;
 }
 
 
 .circle {
-    background: blue;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 1px;
     position: absolute;
 }
