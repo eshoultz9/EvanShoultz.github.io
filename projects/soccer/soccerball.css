@@ -1,0 +1,217 @@
+body{
+    background-image: url("https://assetsio.reedpopcdn.com/Fortnite-Chapter-3-Season-4-Map-Header.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp");
+    background-size: 1700px;
+}
+
+
+.ball{
+  position:absolute;
+  border-radius:50%;
+  width:75px;
+  height: 75px;
+  top: 890px;
+  left: 810px;
+  content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyU9xG4lAdqJbv6Yw2nudV94c7TdScxkXiK8FpD90oMZHWBPGSi7B61Tkld5YRUuhJ2uI:https://i.pinimg.com/736x/e9/c2/ab/e9c2ab7b100cdf93a7776ae4c9d13d6d.jpg&usqp=CAU");
+}
+
+.player{
+  position:absolute;
+  border-radius:50%;
+  width:55px;
+  height: 55px;
+}
+.player:after{
+  font-size:30px;
+  display: flex;
+  position: absolute;
+  left: 25px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+.home-team .player{
+  background:rgb(24, 18, 82);
+  color: rgb(177, 156, 42);
+  
+}
+.home-team .player.one{
+  top:890px;
+  left:40px;
+width: 100px;
+height: 100px;
+  color: black;
+  content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.two{
+  top: 890px;
+  left:110px;
+  width: 100px;
+height: 100px;
+content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.three{
+  top:890px;
+  left:180px;
+  width: 100px;
+  height: 100px;
+  content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.four{
+    top: 890px;
+  left:250px;
+  width: 100px;
+  height: 100px;
+  content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.five{
+    top: 890px;
+  left:320px;
+  width: 100px;
+  height: 100px;
+  content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.six{
+    top: 890px;
+    left:390px;
+    width: 100px;
+    height: 100px;
+    content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.seven{
+    top: 890px;
+    left:460px;
+    width: 100px;
+    height: 100px;
+    content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+.home-team .player.eight{
+    top: 890px;
+    left:530px;
+    width: 100px;
+    height: 100px;
+    content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.nine{
+    top: 890px;
+    left:600px;
+    width: 100px;
+    height: 100px;
+    content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.ten{
+    top: 890px;
+    left:670px;
+    width: 100px;
+    height: 100px;
+    content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.home-team .player.eleven{
+    top: 890px;
+    left:740px;
+    width: 100px;
+    height: 100px;
+    content: url("https://static.miraheze.org/thefinalrumblewiki/d/de/Jonesy.png");
+}
+
+.visitor-team .player{
+  background:red;
+}
+.visitor-team .player:after{
+  color:white;
+}
+.visitor-team .player.one{
+  top:50px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.two{
+  top: 120px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.three{
+  top: 190px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.four{
+  top: 260px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.five{
+  top: 330px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.six{
+  top: 400px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.seven{
+  top: 470px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.eight{
+  top: 540px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.nine{
+  top: 610px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.ten{
+  top: 680px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
+
+.visitor-team .player.eleven{
+  top: 750px;
+  right: -70px;
+  width: 100px;
+  height: 100px;
+ content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEO2aJ32tQNEe6xekuapF_-HFBHW0XUlbjlP4YjrlHrM77MjTAmLmK-gCHMxQEjfPcR74:https://preview.redd.it/peely-buff-puff-v0-nc4lrxxqkc2b1.png%3Fauto%3Dwebp%26s%3D25a2d84d83914497953bb3334ac8ab9933c6e4d0&usqp=CAU");
+}
