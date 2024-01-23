@@ -11,8 +11,8 @@ var highScoreElement = $("#highScore");
 
 // TODO 4a: Create the snake, apple and score variables
 // Game Variables
-var snake = 1;
-var apple = 1;
+var snake = {};
+var apple = {};
 var score = 0;
 // Constant Variables
 var ROWS = 20;
@@ -22,7 +22,7 @@ var KEY = {
   LEFT: 37,
   UP: 38,
   RIGHT: 39,
-  DOWN: 40,
+  DOWN: 40
 };
 
 // interval variable required for stopping the update function when the game ends
@@ -88,15 +88,15 @@ function checkForNewDirection(event) {
   if (activeKey === KEY.LEFT) {
     snake.head.direction = "left";
   }
-  if (activeKey === KEY.RIGHT) {
+  else if (activeKey === KEY.RIGHT) {
     snake.head.direction = "right";
   }
 
-  if (activeKey === KEY.UP) {
+  else if (activeKey === KEY.UP) {
     snake.head.direction = "up";
   }
 
-  if (activeKey === KEY.DOWN) {
+  else if (activeKey === KEY.DOWN) {
     snake.head.direction = "down";
   }
 
@@ -126,20 +126,23 @@ function moveSnake() {
   HINT: The snake's head will need to move forward 1 square based on the value
   of snake.head.direction which may be one of "left", "right", "up", or "down"
   */
-  if (snake.head.direction === "left") {
+  if(snake.head.direction === 'left') {
     snake.head.column = snake.head.column - 1;
   }
   repositionSquare(snake.head);
-  if (snake.head.direction === "right") {
+
+ if(snake.head.direction === 'right') {
     snake.head.column = snake.head.column + 1;
   }
-  repositionSquare(snake.head);
-  if (snake.head.direction === "up") {
-    snake.head.column = snake.head.row  + 1;
+   repositionSquare(snake.head);
+
+ if(snake.head.direction === 'up') {
+    snake.head.row = snake.head.row  - 1; 
   }
-  repositionSquare(snake.head);
-  if (snake.head.direction === "down") {
-    snake.head.column = snake.head.row - 1;
+repositionSquare(snake.head);
+
+ if(snake.head.direction === 'down') {
+    snake.head.row = snake.head.row + 1;  
   }
   repositionSquare(snake.head);
 }
@@ -151,6 +154,7 @@ function hasHitWall() {
   
   HINT: What will the row and column of the snake's head be if this were the case?
   */
+ 
 
   return false;
 }
@@ -229,11 +233,17 @@ function endGame() {
  * position on the board that is not occupied and position the apple there.
  */
 function makeApple() {
-  // TODO 4b-1: Fill in the makeApple() code block
+  // make the apple jQuery Object and append it to the board
   apple.element = $("<div>").addClass("apple").appendTo(board);
+
+  // get a random available row/column on the board
   var randomPosition = getRandomAvailablePosition();
+
+  // initialize the row/column properties on the Apple Object
   apple.row = randomPosition.row;
   apple.column = randomPosition.column;
+
+  // position the apple on the screen
   repositionSquare(apple);
 }
 
@@ -281,6 +291,7 @@ function handleKeyDown(event) {
   // TODO 6a: make the handleKeyDown function register which key is pressed
   activeKey = event.which;
 console.log(activeKey);
+console.log(snake.head.direction)
 }
 
 /* Given a gameSquare (which may be a snakeSquare or the apple), position
@@ -320,6 +331,7 @@ function getRandomAvailablePosition() {
   return randomPosition;
 }
 
+
 function calculateHighScore() {
   // retrieve the high score from session storage if it exists, or set it to 0
   var highScore = sessionStorage.getItem("highScore") || 0;
@@ -332,4 +344,3 @@ function calculateHighScore() {
 
   return highScore;
 }
-console.log(snake.head.direction)
