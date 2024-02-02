@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Walking Simulator</title>
     <!-- Load CSS files -->
     <link rel="stylesheet" type="text/css" href="index.css">
     
@@ -9,10 +9,68 @@
     <script src="jquery.min.js"></script>
     <script src="index.js"></script>
   </head>
-  
+  <style>
+    
+  </style>
   <body>
+    <center>
     <div id='board'>
-      <div id='gameItem'></div>
+      <div id='walker'></div>
     </div>
+    <button id="red" onclick="clickRed();">Switch Character</button>
+        <button id="yellow" onclick="clickYellow();">Switch Character</button>
+        <button id="blue" onclick="clickBlue();">Switch Character</button>
+        <button id="purple" onclick="clickPurple();">Switch Character</button>
+        <button id="white" onclick="clickWhite();">Switch Character</button>
+
+
+        //     $("#walker").css('background-image','url("")')
+
+        <script>
+          var clickRed = function (){
+            $("#walker").css("background-color", "red")
+            $("#walker").css("width", "100px")
+            $("#walker").css("height", "100px")
+             $("#board").css('background-image','url("https://png.pngtree.com/thumb_back/fh260/background/20220705/pngtree-fire-flame-and-blue-background-hd-image_1416594.jpg")')
+             $("#board").css('width',"1000000px")
+            $("#board").css('height',"1000000px")
+       
+        }
+          var clickYellow = function (){
+          $("#walker").css("background-color", "yellow")
+          $("#walker").css("width", "100px")
+            $("#walker").css("height", "100px")
+            $("#board").css('background-image','url("https://c02.purpledshub.com/uploads/sites/48/2023/02/why-sky-blue-2db86ae.jpg?w=1029&webp=1")')
+            $("#board").css('width',"3500px")
+            $("#board").css('height',"2250px")
+            $("#board").css('background-size',"100%")
+          }
+          var clickBlue = function (){
+          $("#walker").css("background-color", "blue")
+          $("#walker").css("width", "100px")
+            $("#walker").css("height", "100px")
+            $("#board").css('background-image','url("https://t4.ftcdn.net/jpg/03/40/89/95/360_F_340899547_97zhUxXJe13qhPEzm1uujmxrkOPg28r2.jpg")')
+            $("#board").css('width',"2000px")
+            $("#board").css('height',"2000px")
+          }
+          var clickPurple = function (){
+          $("#walker").css("background-color", "purple")
+          $("#walker").css("width", "150px")
+            $("#walker").css("height", "150px")
+            $("#board").css('background-size',"100%")
+            $("#board").css('height',"2000px")
+            $("#board").css('width',"4500px")
+            $("#board").css('background-image','url("https://static.vecteezy.com/system/resources/thumbnails/029/110/467/small/background-moon-dark-caves-ai-generated-photo.jpg")')
+          }
+          var clickWhite = function (){
+          $("#walker").css("background-color", "white")
+          $("#walker").css("width", "50px")
+            $("#walker").css("height", "50px")
+            $("#board").css('background-image','url("https://t4.ftcdn.net/jpg/00/84/41/47/360_F_84414721_YVUID2YzgNf89Nhm6z2vpcK2jafocP00.jpg")')
+            $("#board").css('width',"3500px")
+            $("#board").css('height',"3500px")
+          }
+        </script>
+  </center>
   </body>
 </html>
