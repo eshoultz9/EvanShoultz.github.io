@@ -1,135 +1,130 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>My Website</title>
-        <link rel="icon" type="image/x-icon" href= "assets/images-removebg-preview (6).png">
-        <embed src="assets/Yoshi's Story Soundtrack - Yo-Yo-Yoshi!.mp3" loop= "true" autostart="true" width="0" height="0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href= "assets/images-removebg-preview (6).png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Epic Website</title>
+    <embed src="assets/Yoshi's Story Soundtrack - Yo-Yo-Yoshi!.mp3" loop= "true" autostart="true" width="0" height="0">
         <style>
-            body {
-                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl4YL8YlbdTMde1zp8Se4ry5j8y9y9VQbQu7EKZ-t0OFZFh7UBKeCEmnPsKA_RyKmwzYw:https://m.media-amazon.com/images/I/81pJUrECVzL.jpg&usqp=CAU);
-                color: rgb(255, 255, 255);
-                padding: 10px;
-                font-family: 'Arial', Times, serif;
-            }
-            marquee{
-                max-width: screen;
-            }
-            #all-contents {
-              max-width: 800px;
-                margin: auto;
-            }
-         
-            /* navigation menu */
-            nav {
-                background: black;
-               margin: 0 auto;
-               margin-bottom: 20px;
-                display: flex;
-                padding: 10px;
-                border: 15px rgb(255, 255, 255);
-                border-radius: 725px;
-            }
-            h1 {
-                display: flex;
-                align-items: center;
-                color: rgb(255, 255, 255);
-                flex: 1;
-                margin: 0;
-            }
-            #nav-ul {
-                list-style-image: none;
-            }
-            .nav-li {
-                display: inline-block;
-                padding: 0 10px;
-            }
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
-         
-            /* main container area beneath menu */
-            main {
-                
-                display: flex;
-                border: 2px black;
-                border-radius: 25px;
-                background-color: rgb(0, 0, 0);
-            }
-            .sidebar {
-                margin-right: 25px;
-                padding: 10px;
-                background-color: rgb(0, 0, 0);
-                border-radius: 25px;
-            }
-            .sidebar-img {
-                width: 200px;
-                border: 2px black;
-                border-radius: 25px;
-            }
-            .content {
-                flex: 1;
-                padding: 15px;
-                background-color: rgb(0, 0, 0);
-                border-radius: 25px;
-            }
-            #interests {
-                border: 4px white ridge;
-                padding: 8px;
-                background-color: black;
-            }
-            h2, h3 {
-                margin: 0px;
-            }
-            #nav-ul :hover{
-            color: red;
-            font-size: 20px;
-            }
-         
-         </style>
-    </head>
-    
-    <body id="all-contents">
-        <!-- Visible  HTML elements GO HERE -->
-        
-        <div>
-            <nav>
-                <h1 class="name">My Website</h1>
-                <ul id="nav-ul">
-                    <li class="nav-li">
-                        <a href="index.html"> Home </a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="portfolio.html"> Portfolio </a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="games.html"> Games </a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="nav-a" href="supersecret.html">???</a>
-                    </li>
-                </ul>
-            </nav>
-            <main>
-                <!-- Sidebar section -->
-                <div class="sidebar">
-                    <img class="sidebar-img" src=""> </img>
-                </div>
-                <!-- Content section -->
-                <div class="content">
-                    <h2>Evan Shoultz</h2>
-                    <p>Student at Covington High School</p>
-                        <!-- Interests Section -->
-                        <div id="interests">
-                            <h3>List of Fun Facts</h3>
-                            <ul>
-                                <li>I like pie.</li>
-                            </ul>
-                        </div>
-                </div>
-        
-            </main>
-        </div>
 
-    </body>
+            body{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl4YL8YlbdTMde1zp8Se4ry5j8y9y9VQbQu7EKZ-t0OFZFh7UBKeCEmnPsKA_RyKmwzYw:https://m.media-amazon.com/images/I/81pJUrECVzL.jpg&usqp=CAU);
+            }
+            a{
+                font-size: 24px;
+                color:white;
+                text-decoration: none;
+            }
+            a:hover{
+                font-size: 30px;
+                color:rgb(255, 0, 0);
+                text-decoration: none;
+            }
+            div{
+                border-color: white;
+                border-width: 30px;
+            }
+            .picture1{
+                height: 520px;
+                width: 450px;
+               background-color: black;
+                float: left;
+                border-radius: 40px;
+                border-color: grey;
+          
+            }
+            .name{
+                height: 200px;
+                width: 450px;
+                background-color: black;
+                color: white;
+                float: right;
+            }
+            .big{
+                font-size: 30px;
+            }
+            
+         .intro{
+            height: 100px;
+            width: 400px;
+            background-color: black;
+         }
+         .intro2{
+            height: 350px;
+            width: 400px;
+            background-color: black;
+            color: white
+         }
+         .spacer{
+            height: 10px;
+            width: 400px;
+            background-color: transparent;
+         }
+         .Wagadoogy{
+            align-items: center;
+            vertical-align: middle;
+            color:white    
+         }
+        </style>
+</head>
+<body>
+    <div class = "picture1"> 
+        <center>
+        <img src="assets/P4_Louie-removebg-preview.png">
+        <caption class = "gk">Glorious King Louie</caption>
+    </center>
+    
+    </div>
+<center>
+<div class = "intro">
+    <h1 class = "Wagadoogy">Super Epic Website</h1>
+    <h2 class = "Wagadoogy">By Evan "Danger" Shoultz</h2>
+</div>
+</center>
+
+
+
+
+
+    <div class = "name"> 
+      
+        <center>
+       <h1 class = "big">Links Elsewhere</h1>
+      <ul> <a href="portfolio.html">Portfolio</a></ul>
+    <ul>  <a href="games.html">Games</a></ul>
+<ul> <a href="supersecret.html">???</a></ul>
+    </center>
+    </div>
+
+    
+    <center>
+        <div class = "spacer">
+        
+        </div>
+        </center>
+
+    <center>
+        <div class = "intro2">
+        <h1>My Intrests</h1>
+        <li>Eating Pie</li>
+        <li>Coding This Website</li>
+        <li>Louie</li>
+        <li>PepsiNitro</li>
+        <li>Getting A's in O'Connell's class</li>
+        <li>Louie</li>
+        <li>Doing Mediocre in Math</li>
+        <li>Inventing Wagadoogy</li>
+        <li>Louie</li>
+        <li>Telling Silly Stories</li>
+        <li>Flying my Bugatti</li>
+        <li>Louie</li>
+         <li>Playing Video Games</li>
+        </div>
+        </center>
+        
+      
+
+</body>
 </html>
