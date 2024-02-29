@@ -23,16 +23,17 @@
                 text-decoration: none;
             }
             div{
-                border-color: white;
-                border-width: 30px;
+                padding: 10px;
             }
             .picture1{
-                height: 520px;
+                height: 510px;
                 width: 450px;
-               background-color: black;
+               background-image: url("assets/360_F_492483827_1ZroF5jdz8ZvYlpsjT90Hb3kxytJ9AQI.jpg");
                 float: left;
-                border-radius: 40px;
-                border-color: grey;
+                border-width: 10px;
+                border-color: black;
+                border-style:solid;
+                border-radius: 10px;
           
             }
             .name{
@@ -48,7 +49,7 @@
             
          .intro{
             height: 100px;
-            width: 400px;
+            width: 700px;
             background-color: black;
          }
          .intro2{
@@ -67,12 +68,18 @@
             vertical-align: middle;
             color:white    
          }
+         .hidden{
+            color:black;
+         }
+         .hidden:hover{
+            color:red;
+         }
         </style>
 </head>
 <body>
     <div class = "picture1"> 
         <center>
-        <img src="assets/P4_Louie-removebg-preview.png">
+        <img src="assets/P4_Louie-removebg-preview.png" class = "Louie">
         <caption class = "gk">Glorious King Louie</caption>
     </center>
     
@@ -94,16 +101,12 @@
        <h1 class = "big">Links Elsewhere</h1>
       <ul> <a href="portfolio.html">Portfolio</a></ul>
     <ul>  <a href="games.html">Games</a></ul>
-<ul> <a href="supersecret.html">???</a></ul>
+<ul> <a href="supersecret.html" class="hidden">???</a></ul>
     </center>
     </div>
 
     
-    <center>
-        <div class = "spacer">
-        
-        </div>
-        </center>
+ <br>
 
     <center>
         <div class = "intro2">
@@ -124,7 +127,7 @@
         </div>
         </center>
         
-      
+      <marquee><img src="assets/LouiePikmin2.jpg"></marquee>
 
 </body>
 </html>
