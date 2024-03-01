@@ -14,12 +14,12 @@
 <body>
 
 <script>
-const _GRAVITY = 1800;
-const _MAX_UPWARDS_VELOCITY = -300;
+const _GRAVITY = 6000;
+const _MAX_UPWARDS_VELOCITY = -3000;
 const _UPWARDS_ACCELERATION = -1000;
-const _TERMINAL_VELOCITY = 4000;
-const _PIPE_SPACING_Y = 270;
-const _TREADMILL_SPEED = -450;
+const _TERMINAL_VELOCITY = 400;
+const _PIPE_SPACING_Y = 300;
+const _TREADMILL_SPEED = -700;
 
 const _CONFIG_WIDTH = 960;
 const _CONFIG_HEIGHT = 540;
@@ -267,7 +267,7 @@ class FlappyBirdGame {
 
     if (oldPipeX > 50 && newPipeX <= 50) {
       this._score += 1;
-      this._scoreText.text = "Score: " + this._score;
+      this._scoreText.text = "Freaky Points: " + this._score;
     }
 
     if ((this._pipes[0].X + this._pipes[0].Width) <= 0) {
@@ -298,7 +298,7 @@ class FlappyBirdGame {
   }
 
   _DrawScore() {
-    const text = "Score: 0";
+    const text = "Freaky Points: 0";
     const style = {
       font: "40px Arial",
       fill: "#FFFFFF",
