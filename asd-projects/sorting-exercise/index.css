@@ -46,10 +46,10 @@
     position: relative;
 }
 .bubbleElement {
-    background: url('img/bubble.png');
+    background: url('https://i.ytimg.com/vi/W1Rp8xWsUgc/hqdefault.jpg');
     /*border: 2px aqua ridge;*/
 }
 .quickElement {
-    background: url('img/quick.png');
+    background: url('https://image.pngaaa.com/464/3053464-middle.png');
     /*border: 2px firebrick ridge;*/
 }
