@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(28, 36, 18);
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 #fullContainer {
     width:100%;
 }
@@ -9,8 +14,9 @@
     margin: auto;
     width: 100%;
     border: 2px darkgray double;
-    background: lightgray;
+    background: tan;
     font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #sortContainer {
     display: table;
@@ -20,7 +26,7 @@
 .subContainer {
     display: inline-block;
     width:45%;
-    border: 4px forestgreen groove;
+    border: 4px black groove;
     margin-top: 1.25%;
 }
 #bubbleArea {
